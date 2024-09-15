@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Editable resume builder by Tahira asghar</h1>
+    <img src="pic.jpeg" alt="picture" width="400px" margin="center" >
+    <form id="resumeform">
+        <fieldset>
+            <legend>personal information</legend>
+            <label for="name">name</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">email</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="phone">phone</label>
+            <input type="tel" id="phone" name="phone" required><br></fieldset>
+            <fieldset>
+                <legend>education</legend>
+                <label for="education">education</label>
+                <textarea id="education" name="education" rows="4"></textarea><br>
+            </fieldset>
+            <fieldset>
+                <legend>experience</legend>
+                <label for="experience">experience</label>
+                <textarea id="experience" name="experience" rows="4"></textarea><br>
+            </fieldset>
+            <fieldset>
+                <legend>skills</legend>
+                <label for="skills">skills</label>
+                <textarea id="skills" name="skills" rows="4"></textarea><br>
+            </fieldset>
+            <button type="submit">Generate Resume Below</button>
+
+        
+    </form>
+    
+    <div id="resumeoutput">
+        <!--resume will be generated below-->
+    </div>
+    <script src="main.js"></script>
+    
+</body>
+</html>
